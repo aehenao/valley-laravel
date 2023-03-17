@@ -1,3 +1,10 @@
+## Requerimientos:
+
+PHP>=7.1
+NodeJS v16
+Base de datos: Mysql
+
+
 ## Instalación
 
 1. Configurar el .env de acuerdo al entorno local donde se vaya a montar la Api
