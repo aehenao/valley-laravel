@@ -1,8 +1,8 @@
 ## Requerimientos:
 
-PHP>=7.1
-NodeJS v16
-Base de datos: Mysql
+- PHP>=7.1
+- NodeJS v16
+- Base de datos: Mysql
 
 
 ## Instalación
