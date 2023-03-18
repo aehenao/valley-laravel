@@ -104,5 +104,25 @@ class ApiController extends Controller
         ], 202);
       }
 
+      public function deletePost(Request $request)
+      {
+        $validateData = Validator::make($request->all(), [
+            'id' => 'required',
+        ])->validate();
+        $post = Post::find($validateData['id']);
+
+        if($post){
+            $post->delete();
+            return response()->json([
+                'status' => 200,
+                'msg' => 'Se ha eliminado la publicación'
+            ], 200);
+        }
+
+        return response()->json([
+            'status' => 202,
+            'msg' => 'No se encontró el comentario'
+        ], 202);
+      }
       /** Fin Comentarios */
 }
