@@ -16,6 +16,7 @@ use Illuminate\Http\Request;
 
 //Post
 Route::post('/post/create', 'ApiController@createPost');
+Route::post('/post/delete', 'ApiController@deletePost');
 Route::get('/post/all', 'ApiController@getPosts');
 
 //Comment
